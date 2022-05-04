@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>saber si es un palindromo, saber si es par o impar</p>
+    <script>
+        let palabra = "asa";
+        let palabraAUX ='';
+        for(let index = 0; index < palabra.length; index++){
+            palabraAUX = palabraAUX + palabra[palabra.length -1 - index]
+        }
+        consol.log("valor de palabraAux",palabraAUX)
+        if(palabra == palabraAUX){
+            console.log("es palindromo")
+        }  else{
+            console.log("no es palindromo")
+        }
+    </script>
+</body>
+</html>
